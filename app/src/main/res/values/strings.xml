@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tic_Tac_Toe</string>
+    <string-array name="playoptions">
+        <item>Double</item>
+        <item>Single</item>
+    </string-array>
+</resources>
