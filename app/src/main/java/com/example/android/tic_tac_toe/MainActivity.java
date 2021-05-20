@@ -44,9 +44,10 @@ int player_no =1;
             PlayGame(buSelected);
         }
     }
-
+int flag = 9;
     void PlayGame(Button buSelected){
         int val = 0;
+        flag--;
         switch (buSelected.getId()){
             case R.id.bt1:val=1;
                 break;
@@ -93,6 +94,11 @@ int player_no =1;
                 startActivity(intent);
             }
             player_no=1;
+        }
+        if(flag==0){
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
         }
     }
 
